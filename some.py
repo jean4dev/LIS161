@@ -93,13 +93,18 @@ computegrade()
 
 
 #i1
-    try:
-        new = input("Enter Number: ")
-        total = new + total
-        count += 1
-        break
-    except:
-        print("bad")
+new =""
+total = 0
+count =0
+avg = float()
 
-avg = total/count
-print("total: ",total,"count:",count,"average:",avg )
+while True:
+    if new == "done":
+        break
+    else:
+        try:
+            new = input()
+            count += 1
+            total= new + total
+        except:
+            print("bad")
