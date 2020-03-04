@@ -93,4 +93,13 @@ computegrade()
 
 
 #i1
+    try:
+        new = input("Enter Number: ")
+        total = new + total
+        count += 1
+        break
+    except:
+        print("bad")
 
+avg = total/count
+print("total: ",total,"count:",count,"average:",avg )
